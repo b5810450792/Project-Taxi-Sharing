@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        >
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+             />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/number_room_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Origin           :"
+            />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/origin_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".........."
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination :"
+            />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/destinatiom_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".........."
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

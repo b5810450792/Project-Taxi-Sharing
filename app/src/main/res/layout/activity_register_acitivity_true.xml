@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAcitivityTrue">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/toolbar"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a new Account"
+            android:textSize="20dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Username"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Email"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Password"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phonenumber"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Number Phone"
+            />
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/province_select"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="90dp"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/province_text"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="17dp"
+            android:hint="Add Province"/>
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/area_select"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="90dp"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/area_text"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="17dp"
+            android:hint="Add Area"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:id="@+id/btn_register"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="7dp"
+
+    tools:context="com.example.user.otp5.MenuApp.RoomFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="vertical"
+
+        >
+      <TextView
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Origin address"
+          android:textSize="20dp"/>
+        <SearchView
+            android:id="@+id/where_are_u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Where are you"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:queryHint="Where are you.."
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination address"
+            android:textSize="20dp"/>
+        <SearchView
+            android:id="@+id/going_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Going to"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:queryHint="Going to.."
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name room"
+            android:textSize="20dp"/>
+        <SearchView
+            android:id="@+id/name_room_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Going to"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:queryHint="Name room.."
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_right"
+            android:text="Time"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/show_time"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:hint="Time to go" />
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_right"
+            android:text="Date"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/show_date"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="Date to go"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#b3a9a9"
+            android:textSize="18dp"
+            android:text="...Within 10 kilometers of you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"></ListView>
+</LinearLayout>

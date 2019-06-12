@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuApp.ProfileActivity"
+
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradientbackground"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/myphoto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/profile" />
+            <TextView
+                android:id="@+id/myemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+
+                android:text="test@gmail.com"
+                android:textSize="17dp"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Name"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="21sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Name"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="21sp"-->
+                <!--android:textStyle="bold" />-->
+        </LinearLayout>
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="400dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="275dp">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="3">-->
+                <!--<LinearLayout-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Photos"-->
+                        <!--android:textSize="20sp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="125"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:textColor="@color/startblue"/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Followers"-->
+                        <!--android:textSize="20sp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="1205"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:textColor="@color/startblue"/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Following"-->
+                        <!--android:textSize="20sp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="360"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:textColor="@color/startblue"/>-->
+
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:text="Display Name  :"
+            android:textSize="17dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/myuser"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+
+            android:layout_marginLeft="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="name"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:text="Password         :"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/mypassword"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="XXXXXXXXX"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="12dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:text="Telephone        :"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/mynumberphone"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:ems="10"
+
+                android:inputType="phone"
+                android:hint="0XX-XXX-XXXX"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="12dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/province_select"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/province_text"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Add Province"/>
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:src="@drawable/ic_phone_android_black_24dp"/>-->
+            <!--<TextView-->
+                <!--android:textStyle="bold"-->
+
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="+266 225 225"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:src="@drawable/ic_group_add_black_24dp"/>-->
+            <!--<TextView-->
+                <!--android:textStyle="bold"-->
+
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="Add to group"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:src="@drawable/ic_forum_black_24dp"/>-->
+            <!--<TextView-->
+                <!--android:textStyle="bold"-->
+
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="Show all comments"/>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:textColor="#fff"-->
+        <!--android:background="@drawable/buttonstyleithgradient"-->
+        <!--android:layout_marginTop="35dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Follow Me"/>-->
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:textStyle="bold"
+                    android:id="@+id/area_select"
+                    android:textSize="15dp"
+                    android:layout_width="150dp"
+
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/area_text"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Add Area"/>
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:src="@drawable/ic_phone_android_black_24dp"/>-->
+            <!--<TextView-->
+            <!--android:textStyle="bold"-->
+
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:text="+266 225 225"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:src="@drawable/ic_group_add_black_24dp"/>-->
+            <!--<TextView-->
+            <!--android:textStyle="bold"-->
+
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:text="Add to group"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:src="@drawable/ic_forum_black_24dp"/>-->
+            <!--<TextView-->
+            <!--android:textStyle="bold"-->
+
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:text="Show all comments"/>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<Button-->
+            <!--android:textColor="#fff"-->
+            <!--android:background="@drawable/buttonstyleithgradient"-->
+            <!--android:layout_marginTop="35dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Follow Me"/>-->
+
+        </LinearLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:background="@android:color/holo_blue_light"-->
+    <!--android:gravity="center">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="3dp">-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/myphoto"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:src="@mipmap/profile"-->
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+        <!--android:id="@+id/myuser"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="180sp"-->
+        <!--android:layout_marginTop="59sp"-->
+        <!--android:text="Display Name."-->
+        <!--android:textSize="20sp"-->
+        <!--tools:ignore="MissingConstraints"-->
+        <!--tools:layout_editor_absoluteX="202dp"-->
+        <!--tools:layout_editor_absoluteY="62dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView_addressEX"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="25sp"-->
+        <!--android:layout_marginTop="179sp"-->
+        <!--android:text="Password :" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView_passwordEX"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="25sp"-->
+        <!--android:layout_marginTop="269sp"-->
+        <!--android:text="Address :" />-->
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView_EmailEX"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="25sp"-->
+        <!--android:layout_marginTop="359sp"-->
+        <!--android:text="Telephone :" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView7"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="180sp"-->
+        <!--android:layout_marginTop="21dp"-->
+        <!--android:text="Display Name :" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_save"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/textView_addressEX"-->
+        <!--android:layout_marginStart="80dp"-->
+        <!--android:layout_marginTop="450sp"-->
+
+        <!--android:layout_gravity="center"-->
+        <!--android:text="Save"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1" />-->
+    <!--<Button-->
+        <!--android:id="@+id/button_edit"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/textView_addressEX"-->
+
+        <!--android:layout_marginTop="450sp"-->
+
+        <!--android:layout_gravity="center"-->
+        <!--android:text="Edit"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1" />-->
+    <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+        <!--android:id="@+id/myaddress"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="22sp"-->
+        <!--android:layout_marginTop="289sp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Add Address"-->
+        <!--android:inputType="textPersonName" />-->
+
+    <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+
+        <!--android:id="@+id/mypassword"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="22sp"-->
+        <!--android:layout_marginTop="200sp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="**********"-->
+        <!--android:inputType="textPassword" />-->
+
+
+
+    <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+        <!--android:id="@+id/mynumberphone"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="22sp"-->
+        <!--android:layout_marginTop="379sp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="0xx-xxx-xxxx"-->
+        <!--android:inputType="textEmailAddress" />-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/gradientbackground"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edit_save"
+            android:text="edit"
+        />
+        <Button
+            android:id="@+id/button_save"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edit_save"
+            android:text="save"
+
+            />
+    </LinearLayout>
+</LinearLayout>

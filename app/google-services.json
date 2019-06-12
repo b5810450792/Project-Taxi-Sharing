@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "101711079937",
+    "firebase_url": "https://projectfinalfix.firebaseio.com",
+    "project_id": "projectfinalfix",
+    "storage_bucket": "projectfinalfix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101711079937:android:3971a7b15c8cde50",
+        "android_client_info": {
+          "package_name": "com.example.user.otp5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101711079937-gjjnd0g5oh3k1d82hmucdjg6b5hmk0sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.otp5",
+            "certificate_hash": "5f34f30901fd9af250f4075467aa4a7e36993fb9"
+          }
+        },
+        {
+          "client_id": "101711079937-idp064o18u8jdvefm4l9oi062ar40d94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx4nyrZNyXNQa2HMqT02C1n-eRvimZPoA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101711079937-idp064o18u8jdvefm4l9oi062ar40d94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

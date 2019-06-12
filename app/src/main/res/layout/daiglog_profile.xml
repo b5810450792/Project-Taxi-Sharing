@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@mipmap/ic_launcher_round" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_id"
+            android:text="Boss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="masmaroz01@gmail.com"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/numberphone_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0830784272"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/area_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="area"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/province_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="province"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

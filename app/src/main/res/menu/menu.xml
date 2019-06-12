@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+        <item
+            android:id="@+id/find_path"
+            android:icon="@drawable/ic_room"
+            android:title="Find Path" />
+        <item
+            android:id="@+id/im_going"
+            android:icon="@drawable/ic_room"
+            android:title="Your room" />
+        <item
+            android:id="@+id/room"
+            android:icon="@drawable/ic_room"
+            android:title="Room" />
+
+        <item
+            android:id="@+id/checkevent"
+            android:icon="@drawable/ic_check_event"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+
+</menu>
